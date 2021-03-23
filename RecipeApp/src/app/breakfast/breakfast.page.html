@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title class="ion-text-center">Breakfast</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header >
+      <ion-label class="ion-text-center">Breakfast Recipe</ion-label>
+    </ion-list-header>
+    
+    <ion-item [routerLink]="['/recipe1']" >
+      <ion-avatar slot="start">
+        <img src="assets/eggsandwich.jpg" />
+      </ion-avatar>
+      <ion-label color="ion-text-center">
+        <h1>Egg Sandwich</h1>
+        
+      </ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/recipe2']">
+      <ion-avatar slot="start">
+        <img src="assets/pancake.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h1>Pancake</h1>
+        
+        <p></p>
+      </ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/recipe3']">
+      <ion-avatar slot="start">
+        <img src="assets/chickenwrap.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h1>Chicken Wraps</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

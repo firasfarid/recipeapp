@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-toolbar color="tertiary">
+    <ion-title class="ion-text-center">Recipe Category</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen color="danger">
+  <ion-card>
+    <img src="/assets/breakfast.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Breakfast</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="tertiary" expand="full"  [routerLink]="['/breakfast']" >
+        <b>Click to see recipes</b>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="/assets/nasiayam.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Lunch</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="tertiary" expand="full"  [routerLink]="['/lunch']" >
+        <b>Click to see recipes</b>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="/assets/spageti.jpg" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Dinner</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="tertiary" expand="full"  [routerLink]="['/dinner']" >
+        <b>Click to see recipes</b>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

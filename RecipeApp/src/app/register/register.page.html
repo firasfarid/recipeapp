@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="tertiary" class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-back-button>Back</ion-back-button>
+    </ion-buttons>
+       <ion-title>Register</ion-title>
+  </ion-toolbar>
+  
+  
+ </ion-header>
+ 
+ <ion-content padding class="background" color="danger">
+  <p class="ion-text-center">
+    <img src="assets/logoapp.png" width="60%">
+</p>
+  <h1 class="ion-text-center">Register</h1>
+     <br>
+  <ion-card color="secondary">
+    
+  
+      <ion-item color="secondary"> 
+        <ion-label position="floating">E-mail/ No.Telephone</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email" required></ion-input ></ion-item>
+        <br>
+        <ion-item color="secondary"> 
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password" required></ion-input ></ion-item>
+          </ion-card>
+            <ion-button class="ion-padding" color="tertiary" shape="round" expand="full" (click)="register(user)" [routerLink]="['/login']" >
+              <b>Register</b>
+            </ion-button>
+            <br>
+            <p class="ion-text-center">Already have an account?
+              <ion-button class="ion-padding" color="tertiary" shape="round" expand="full" [routerLink]="['/login']" >
+              <b>Log in</b>
+              </ion-button></p>
+ </ion-content>
+
